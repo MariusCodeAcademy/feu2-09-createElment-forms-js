@@ -17,3 +17,15 @@
 3. sukurti funkcija kuri sukuria [1-2] punkto struktura ir priima selektoriaus argumenta kur ikelti. pvz 
    1. `createSection('#app')` - sukurs struktura ir ikels i elementa su id 'app'
    2. `createArticle('.aside')` - sukurs struktura ir ikels i elementa su klase 'aside'
+
+4. nusikopijuoti i html sita struktura tiesiogiai. sukurti ir prideti trukstamas dienas su javascript
+
+```html
+<ul>
+  <li>Pirmadienis</li>
+  <li>Antradienis</li>
+  <li>Treciadienis</li>
+  <li>Penktadienis</li>
+  <li>Sekmadienis</li>
+</ul>
+```
