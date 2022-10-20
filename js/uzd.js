@@ -26,11 +26,48 @@ function makeArticle() {
   artEl.append(h2El);
 
   // <p>date: <strong>2022</strong></p>
-
+  const pDateEl = '<p>date: <strong>2022</strong></p>';
+  artEl.insertAdjacentHTML('beforeend', pDateEl);
   // <p>It is all dynamic</p>
-
+  const pEl = document.createElement('p');
+  pEl.textContent = 'It is all dynamic';
+  artEl.append(pEl);
   // artEl.insertAdjacentElement('beforeend', h2El);
   // dedam article i main
   mainEl.append(artEl);
 }
 makeArticle();
+
+/*
+<ol class="colors">
+        <li>red</li>
+        <li>green</li>
+        <li>blue</li>
+        <li>white</li>
+      </ol>
+*/
+
+function makeColorsList() {
+  const olEl = crElement('ol', mainEl, null, 'colors');
+  crElement('li', olEl, 'red');
+  crElement('li', olEl, 'green');
+  crElement('li', olEl, 'blue');
+  crElement('li', olEl, 'white');
+  crElement('li', olEl, 'what ever color');
+}
+
+makeColorsList();
+// Helper functions ========================
+
+function crElement(tagName, destination, elText = null, className = null) {
+  const el = document.createElement(tagName);
+  el.textContent = elText;
+  if (className !== null) el.className = className;
+
+  destination.append(el);
+  return el;
+}
+
+// sukurti h3 el su klase 'title' tekstu 'sveiki' ir patalpinti i body
+
+// document.body.prepend(sukurtasEL);
