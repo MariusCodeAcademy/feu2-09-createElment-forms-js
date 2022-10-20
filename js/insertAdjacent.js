@@ -6,7 +6,7 @@ const listEl = document.getElementById('colorsList');
 // elem.insertAdjacentHTML(where, html)
 // panasus i innerHTML. skirtas ikelti tekstiniam htmlui
 
-const h2ElString = '<h2>Colors</h2>';
+const h2ElString = '<h2>Colors <strong>wow</strong> </h2>';
 
 const h2El = document.createElement('h2');
 h2El.textContent = 'Colors';
